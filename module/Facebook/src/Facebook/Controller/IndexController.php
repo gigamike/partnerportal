@@ -179,6 +179,7 @@ class IndexController extends AbstractActionController
       $user->setRole('member');
       $user->setActive('Y');
       $user->setCountryId(0);
+      $user->setCredits(50);
       $dynamicSalt = $this->getUserMapper()->dynamicSalt();
       $user->setSalt($dynamicSalt);
       $generatedPassword = $this->getUserMapper()->randomPassword();

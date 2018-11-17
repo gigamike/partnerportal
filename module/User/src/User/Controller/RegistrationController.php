@@ -43,6 +43,7 @@ class RegistrationController extends AbstractActionController
 					$password = md5($config['staticSalt'] . $user->getPassword() . $dynamicSalt);
 					$user->setPassword($password);
           $user->setCountryId(0);
+          $user->setCredits(50);
           $this->getUserMapper()->save($user);
 
           $message = "Thank you for registraion " . $user->getFirstName() . "!";

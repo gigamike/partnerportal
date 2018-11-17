@@ -24,9 +24,15 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <?php if ($user = $this->identity()): ?>
+                  <?php if ($user->role == 'member'): ?>
                 <li class="nav-item">
                   <a class="nav-link" href="<?php echo $this->url('cart'); ?>"><i class="fas fa-user"></i> <?php echo $user->first_name; ?></a>
                 </li>
+              <?php elseif ($user->role == 'supplier'): ?>
+                  <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $this->url('supplier'); ?>"><i class="fas fa-user"></i> <?php echo $user->first_name; ?></a>
+                  </li>
+                <?php endif; ?>
                 <li class="nav-item">
                   <a class="nav-link" href="<?php echo $this->url('logout'); ?>"><i class="fas fa-sign-out-alt"></i> Logout</a>
                 </li>
@@ -175,7 +181,7 @@
               </ul>
             </div>
             <div class="col-6 col-md">
-              <h5>Suppliers</h5>
+              <h5>Partners</h5>
               <ul class="list-unstyled text-small">
                 <li><a class="text-muted" href="#">Resource</a></li>
                 <li><a class="text-muted" href="#">Resource name</a></li>

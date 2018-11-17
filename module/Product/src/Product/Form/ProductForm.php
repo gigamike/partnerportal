@@ -46,7 +46,7 @@ class ProductForm extends Form
           'required' => 'required',
           'data-validation-required-message' => 'Please enter your description.',
           'placeholder' => 'Description',
-          'rows' => 10,
+        
         ],
       ]);
 
