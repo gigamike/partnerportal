@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "HelloWorldIntent"
+    },
+    {
+      "intent": "PlayVideoIntent"
+    },
+    {
+      "intent": "CategoryIntent",
+      "slots": [
+        {
+          "name": "Category",
+          "type": "LIST_OF_CATEGORIES"
+        }
+      ]
+    },
+    {
+      "intent": "SSMLIntent"
+    },
+  ]
+}

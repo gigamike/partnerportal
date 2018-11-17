@@ -1,0 +1,17 @@
+Ask Partner Portal
+
+HelloWorldIntent hello
+HelloWorldIntent say hello
+HelloWorldIntent say hello world
+
+SearchCaptureIntent add Tide liquid detergent
+SearchCaptureIntent add Ariel liquid detergent
+SearchCaptureIntent add Tide liquid detergent to my cart
+SearchCaptureIntent add Ariel liquid detergent to my cart
+
+AddCartCaptureIntent one
+AddCartCaptureIntent two
+AddCartCaptureIntent three
+AddCartCaptureIntent add one
+AddCartCaptureIntent add two
+AddCartCaptureIntent add three

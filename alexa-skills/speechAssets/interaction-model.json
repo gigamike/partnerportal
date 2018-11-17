@@ -1,0 +1,84 @@
+{
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "HelloWorldIntent",
+        "samples": [
+            "hello",
+            "say hello",
+            "hello world"
+        ],
+        "slots": []
+      },
+      {
+        "name": "PlayVideoIntent",
+        "samples": [
+            "play latest video",
+            "play newest video",
+            "play video",
+            "play latest weather forecast",
+            "play latest news",
+        ],
+        "slots": []
+      },
+      {
+        "name": "VacationCaptureIntent",
+        "samples": [
+            "i like a vacation",
+        ],
+        "slots": []
+      },
+      {
+        "name": "CategoryCaptureIntent",
+        "samples": [
+            "i want beach",
+        ],
+        "slots": [
+          "Beach",
+          "City Tour",
+          "Hiking",
+          "Camping",
+          "Resort"
+        ]
+      },
+      {
+        "name": "DateCaptureIntent",
+        "samples": [
+            "tomorrow",
+        ],
+        "slots": [
+          "Today",
+          "Tomorrow"
+        ]
+      },
+      {
+        "name": "PlaceCaptureIntent",
+        "samples": [
+            "i want Quezon",
+        ],
+        "slots": [
+          "Quezon",
+          "Cavite",
+          "Batangas"
+        ]
+      },
+      {
+        "name": "RoomCaptureIntent",
+        "samples": [
+            "one room",
+        ],
+        "slots": []
+      },
+    ]
+  }
